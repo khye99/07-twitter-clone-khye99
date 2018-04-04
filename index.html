@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title> Twitter Clone </title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href ="style.css" type ="text/css">
+
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light fixed-top">
+      <div class="container">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                  <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-home "></i>    Home</a>
+                  </li>
+                  <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-bolt "></i>    Moments</a>
+                  </li>
+                  <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-bell "></i>    Notifications</a>
+                  </li>
+                  <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-envelope "></i>    Messages</a>
+                  </li>
+            </ul>
+            <a class="navbar-brand" href="#" id="birdie"><i class="fab fa-twitter fa-2x"></i></a>
+            <form class="form-inline my-2 my-lg-0">
+                  <input class="form-control mr-sm-2"id="searchbar" type="search" placeholder="Search Twitter" aria-label="Search">
+            </form>
+            <div id="home-profile-photos">
+                    <img src="Karen.jpg" alt="Karen Photo"/>
+            </div>
+            <a class ="btn btn-primary tweet-button" href="#">Tweet</a>
+      </div>
+    </div>
+</nav>
+
+<header>
+      <div id="cover-photo-wrapper">
+          <img src="PBS.jpeg" alt="Cover Image - PBS"/>
+      </div>
+      <div id="profile-photo-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                  <img src="Bill.jpg" id="profile-photo" alt="Profile Photo - Bill"/>
+                </div>
+                <div class="col-6">
+                  <a href="#" class="profile-stats">Tweets<span>2,630</span></a>
+                  <a href="#" class="profile-stats">Following<span>183</span></a>
+                  <a href="#" class="profile-stats">Followers<span>45.4M</span></a>
+                  <a href="#" class="profile-stats">Likes<span>41</span></a>
+                </div>
+                <div class="col-2">
+                  <button type="button" class="btn btn-primary" id="follow-button">Follow</button>
+                </div>
+            </div>
+        </div>
+      </div>
+</header>
+<div class="container">
+  <div class="row">
+      <div class="col-4" id="profile">
+        <hgroup>
+            <a href="#"><h1> Bill Gates <i id="fa" class="fa fa-check-circle fa-xs" aria-hidden="true"></i></h1></a>
+            <a href="#"><h2>@BillGates</h2></a>
+        </hgroup>
+            <p> Sharing things I'm learning through my foundation work and other interests...</p>
+            <span> <i class="fas fa-map-marker-alt"></i> Seattle, WA </span>
+            <span> <i class="fas fa-link"></i> <a href="#">gatesnotes.com</a></span>
+            <span> <i class="far fa-calendar-alt"></i> Joined June 2009 </span>
+            <a class ="btn btn-primary tweet-button" href="#">Tweet to Bill Gates</a>
+            <span id="iD"> <i class="far fa-user"></i> <a href="#">99 Followers you know</a></span>
+            <div id="follower-profile-photos">
+                    <img src="Mark.jpg" alt="Mark Photo"/>
+                    <img src="Elon.jpg" alt="Elon Photo"/>
+                    <img src="Jeff.jpg" alt="Jeff Photo"/>
+                    <img src="Obama.jpg" alt="Obama Photo"/>
+                    <img src="Michelle.jpg" alt="Michelle Photo"/>
+                  </br>
+                  <img src="Steve.jpg" alt="Steve Photo"/>
+                  <img src="Oprah.jpg" alt="Oprah Photo"/>
+                  <img src="Tim.jpeg" alt="Tim Photo"/>
+                  <img src="Warren.jpg" alt="Warren Photo"/>
+                  <img src="Amancio.jpg" alt="Amancio Photo"/>
+            </div>
+            <span id="Id"> <i class="far fa-images"></i> <a href="#">991 Photos and videos</a></span>
+            <div id="photos-and-videos">
+              <img src="img1.jpg" alt="img1 Photo"/>
+              <img src="img2.jpg" alt="img2Photo"/>
+              <img src="img3.jpg" alt="img3 Photo"/>
+            </br>
+            <img src="img4.jpg" alt="img4 Photo"/>
+            <img src="img5.jpg" alt="img5 Photo"/>
+            <img src="img6.jpg" alt="img6 Photo"/>
+            </div>
+      </div>
+      <div class="col-8" id="tweets">
+        <nav class="nav">
+            <a class="nav-link active" href="#">Tweets</a>
+            <a class="nav-link" href="#">Tweets &amp; replies</a>
+            <a class="nav-link" href="#">Media</a>
+</nav>
+      <article class ="container">
+          <div class="row no-gutters">
+            <div class="col-1">
+                  <img src="Bill.jpg" class="profile-thumbnail" alt="Profile Photo - Bill"/>
+            </div>
+            <div class="col-11 tweet-body">
+              <a href="#" class="tweet-username"><span class="username-name">Bill Gates</span> <i class="fa fa-check-circle"></i> <span class="username-handle">@BillGates</span></a>
+                    <p> It’s hard to pick up on progress if you divide the world into developed countries and developing countries. In his newly-released book, Hans Rosling offers a better framework. You can download a free excerpt here…</p>
+                    <img src="Fact.jpg" alt="Factfullness"/>
+                    <nav>
+                        <a href="#" class="comments"><i class="far fa-comment"></i> 138</a>
+                        <a href="#" class="retweets"><i class="fa fa-retweet"></i> 636</a>
+                        <a href="#" class="hearts"><i class="far fa-heart"></i> 2.4K </a>
+                        <a href="#" class="email"><i class="far fa-envelope"></i> </a>
+                    </nav>
+            </div>
+          </div>
+      </article>
+      <article class ="container">
+          <div class="row no-gutters">
+            <div class="col-1">
+                  <img src="Bill.jpg" class="profile-thumbnail" alt="Profile Photo - Bill"/>
+            </div>
+            <div class="col-11 tweet-body">
+              <a href="#" class="tweet-username"><span class="username-name">Bill Gates</span> <i class="fa fa-check-circle"></i> <span class="username-handle">@BillGates</span></a>
+                    <p> Good news: the world’s newest country reported zero cases of Guinea worm in 2017 and hasn’t had a case in 15 months.</p>
+                    <img src="Hunt.jpg" alt="Hunt virus"/>
+                    <nav>
+                        <a href="#" class="comments"><i class="far fa-comment"></i> 242</a>
+                        <a href="#" class="retweets"><i class="fa fa-retweet"></i> 705</a>
+                        <a href="#" class="hearts"><i class="far fa-heart"></i> 5.9K </a>
+                        <a href="#" class="email"><i class="far fa-envelope"></i> </a>
+                    </nav>
+            </div>
+          </div>
+      </article>
+      </div>
+  </div>
+</div>
+
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  </body>
+</html>
